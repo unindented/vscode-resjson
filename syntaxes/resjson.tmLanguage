@@ -142,6 +142,20 @@
 					<key>name</key>
 					<string>comment.line.double-slash.js</string>
 				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.json</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>"_([^"]+).comment"\s*:.*$\n?</string>
+					<key>name</key>
+					<string>comment.block.documentation.json</string>
+				</dict>
 			</array>
 		</dict>
 		<key>constant</key>
@@ -294,7 +308,7 @@
 		<key>objectkey</key>
 		<dict>
 			<key>begin</key>
-			<string>"</string>
+			<string>"(?!_)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>0</key>
